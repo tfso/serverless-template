@@ -127,6 +127,11 @@ functions:
 #           BlockPublicPolicy: true
 #           IgnorePublicAcls: true
 #           RestrictPublicBuckets: true
+#        BucketEncryption:
+#          ServerSideEncryptionConfiguration:        
+#            - ServerSideEncryptionByDefault:
+#                SSEAlgorithm: 'AES256'
+
 #  Outputs:
 #     NewOutput:
 #       Description: "Description for the output"
